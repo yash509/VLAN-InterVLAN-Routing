@@ -1,4 +1,4 @@
-# VLAN + Inter-VLAN Routing (Cisco Packet Tracer)
+# VLAN + Inter-VLAN Routing
 
 This repository documents the step-by-step process of configuring VLANs and enabling inter-VLAN routing using Cisco Packet Tracer.
 
