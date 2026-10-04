@@ -1,0 +1,33 @@
+enable
+configure terminal
+
+vlan 10
+ name IT
+vlan 20
+ name HR
+vlan 30
+ name Finance
+vlan 40
+ name Operations
+
+interface fastEthernet 0/1
+ switchport mode trunk
+ switchport trunk allowed vlan all
+
+interface fastEthernet 0/2
+ switchport mode access
+ switchport access vlan 10
+
+interface fastEthernet 0/3
+ switchport mode access
+ switchport access vlan 20
+
+interface fastEthernet 0/4
+ switchport mode access
+ switchport access vlan 30
+
+interface fastEthernet 0/5
+ switchport mode access
+ switchport access vlan 40
+
+do write
